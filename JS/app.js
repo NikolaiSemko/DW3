@@ -11,7 +11,7 @@ let txt1, txt2, txt3, txt4 ;
 export let win;
 
 let img_logo = new Image();
-img_logo.src = "/IMG/logo.png";
+img_logo.src = "./IMG/logo.png";
 
 // html text collections
 //let list_ch = new TagCollection("div", "lch", 1.5, 3.8, "#BBF", "Roboto-Light", 1.0, 1.005, 11, true, "em");
