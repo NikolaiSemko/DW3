@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--<svg viewBox="-40 0 150 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g fill="grey"
+           transform="rotate(-10 50 100)
+                      translate(-36 45.5)
+                      skewX(40)
+                      scale(1 0.5)">
+          <path id="heart" d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" />
+        </g>
+      
+        <use xlink:href="#heart" fill="none" stroke="red"/>
+      </svg>-->
+    <svg width="100vw" height="100vh">
+      <svg>
+        <linearGradient id="myGradient" gradientTransform="rotate(45)">
+          <stop offset="0%" stop-color="#99F" />
+          <stop offset="100%" stop-color="#003" />
+        </linearGradient>
+        <linearGradient id="myGradient2" gradientTransform="rotate(45)">
+          <stop offset="0%" stop-color="#004" />
+          <stop offset="100%" stop-color="#66A" />
+        </linearGradient>
+
+        <rect x = "50%" y = "52%" width = "8%" height = "2.0vw" rx = "1.0vw" fill="url('#myGradient2')"/>
+        <rect x = "50.4%" y = "52.4%" width = "7.1%" height = "1.6vw" rx = "0.8vw" fill="#88F"/>
+        <circle cx="54%" cy="54.05%" r="2.0vw" fill="url('#myGradient')" />
+        <circle cx="54%" cy="54.05%" r="1.6vw" fill="#009" />
+      </svg>
+    </svg>
+  </body>
+</html>
