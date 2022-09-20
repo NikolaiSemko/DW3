@@ -1,7 +1,6 @@
 import TagCollection from "./TagColl.js";
 import Layer from "./DWLib/main.js";
 import SvgImage, { svg } from "./DWLib/svg.js";
-import GetDataFromServer, { Channel, Video } from "./GetDataFromServer.js";
 import { TextLine } from "./DWLib/SvgText.js";
 
 let clr = {background: "#131722", wnd: "#1E222D"};
@@ -12,7 +11,7 @@ let txt1, txt2, txt3, txt4 ;
 export let win;
 
 let img_logo = new Image();
-img_logo.src = "static/IMG/logo.png";
+img_logo.src = "/IMG/logo.png";
 
 // html text collections
 //let list_ch = new TagCollection("div", "lch", 1.5, 3.8, "#BBF", "Roboto-Light", 1.0, 1.005, 11, true, "em");
@@ -58,7 +57,6 @@ onload = () => {
   txt2 = new TextLine(win.svg, 70, 2, "Width = " + win.w, 3); 
   txt3 = new TextLine(win.svg, 70, 7, "Height = " + win.h, 3); 
   txt4 = new TextLine(win.svg, 70, 12, "Scale = " + win.scale, 3);
-  data = new GetDataFromServer(reDrawWin);
   for (let i = 0; i < win.n_win; i++) {
     if (i == win.n_win-1) logo[i] = new SvgImage(win.wins[i].svg, "youtube_logo", svg.youtube_logo, i, 0, 0, 100);
     else logo[i] = new SvgImage(win.wins[i].svg, "youtube_logo1", svg.youtube_logo1, i, 0, 0, 50);
@@ -69,5 +67,3 @@ onload = () => {
     txt[i] = new TextLine(win.wins[i].svg, 50, 10, "Hello World!", 5);
   }
 };
-
-
